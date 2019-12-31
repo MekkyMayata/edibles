@@ -1,0 +1,191 @@
+    html {
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+    
+    * {
+        box-sizing: inherit;
+    }
+    /*the header*/
+    
+    header h1 {
+        margin-top: 1.5em;
+    }
+    
+    header p {
+        margin-top: -12px;
+    }
+    
+    .head-list {
+        text-align: center;
+    }
+    
+    #top-nav {
+        text-decoration: none;
+        color: white;
+        background-color: #b26a3e;
+        border: 2px solid;
+        border-radius: 30px;
+        font-family: 'PT Sans', sans-serif;
+        opacity: 0.7;
+    }
+    
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        border: 1px solid;
+        border-radius: .5em;
+        padding: .5em 1em;
+        margin: .5em;
+    }
+    
+    li a {
+        text-decoration: none;
+    }
+    
+    nav ul li {
+        font-size: .8em;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+    }
+    
+    .home-style {
+        text-align: center;
+        font-family: Lobster;
+        height: 15em;
+        color: #f7e7ce;
+        background: url('/assets/images/bread_n_knife.jpg') no-repeat center center;
+        background-size: cover;
+        transition: transform 0.5s ease;
+        border-radius: 10px;
+    }
+    
+    .home-style:hover {
+        transform: scale(1.1);
+    }
+    /* texts in header */
+    
+    .anchor {
+        color: white;
+        font-size: 14px;
+    }
+    
+    #motto {
+        font-family: PT Sans, sans-serif;
+        font-size: 20px;
+    }
+    
+    #trade-m {
+        font-size: 8px;
+    }
+    /* styling the main contents */
+    
+    body {
+        font-size: 1rem;
+        background: url('stripes1.png') left top repeat-y, url('stripes1.png') right top repeat-y;
+        margin: 0;
+    }
+    
+    .pop-img {
+        transition: transform 0.8s ease;
+        /* all images in the body */
+    }
+    
+    .pop-img:hover {
+        transform: scale(1.1);
+    }
+    
+    h1 {
+        font-size: 2rem;
+        opacity: 0.9;
+        font-family: Lobster;
+    }
+    
+    h2,
+    h3,
+    h4 {
+        font-family: 'Stint Ultra Expanded', cursive;
+        text-transform: uppercase;
+        color: #7a0000;
+    }
+    
+    h2 {
+        color: #555;
+    }
+    
+    h3 {
+        border-top: 0.5px dotted;
+        border-left: 3px solid;
+        padding-left: 1em;
+        margin-top: 6px;
+    }
+    
+    main p {
+        font-family: 'Stint Ultra Expanded', cursive;
+        background-color: white;
+        color: #555;
+    }
+    
+    main {
+        padding: 3em;
+        border: double 4px #eaddc4;
+        border-radius: 25px;
+        margin: 3.5%;
+        margin-top: 0.8%;
+    }
+    
+    a:link,
+    a:visited {
+        color: yellow;
+    }
+    
+    a:focus,
+    a:hover,
+    a:active {
+        color: #F9AB33;
+    }
+    
+    a.learn-links:link,
+    a.learn-links:visited {
+        color: #b26a3e;
+    }
+    
+    a.learn-links:focus,
+    a.learn-links:hover,
+    a.learn-links:active {
+        color: #F9AB33;
+    }
+    
+    article h3 img {
+        border-radius: 20px;
+        /* border: 2px solid orangered; */
+        margin-top: 4px;
+    }
+    
+    article {
+        padding: 1em;
+        padding-left: 45px;
+        background-color: #F6F3ED;
+        border-width: 5px;
+        box-shadow: 6px 6px 5px 6px gray;
+        border-top-right-radius: 25px;
+    }
+    
+    #footer {
+        text-decoration: none;
+        color: white;
+        background-color: #b26a3e;
+        border: 2px solid;
+        border-radius: 30px;
+        font-family: 'PT Sans', sans-serif;
+        opacity: 0.7;
+        text-align: center;
+        padding: 1em;
+    }
