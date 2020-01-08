@@ -1,20 +1,19 @@
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
-const product = require('../models/article')
+const article = require('../models/article')
 
 //dummy data
-let data = [{item:'You have fun, we\'ll handle the baking...'}, {
-    item: 'Welcome to the Edibles bakery an italian inspired bakery shop located in the heart of Lagos, at the Ikeja city mall, and at various shopping malls around the west-side.'}]
+// let data = [{item:'You have fun, we\'ll handle the baking...'}, {item: 'alice'}]
 
 //fire product model
-product()
+article()
 
 module.exports = function(app) {
 
     //routing
     app.get('/edibles/home', function(req, res) {
         //fetching data from the database
-        product.Product.find({}, (err, data) => {
+        article.Product.findById({"_id":"5e0fa16ec7b1521fb253390b"}, (err, data) => {
             if(err) throw err;
             res.render('home', {products: data});
         })
@@ -39,7 +38,7 @@ module.exports = function(app) {
     app.post('/edibles/content', urlencodedParser, (req, res) => {
         console.log(req.body);
 
-        let newProduct = product.Product(req.body).save((err, data) => {
+        let newProduct = article.Product(req.body).save((err, data) => {
             if(err) throw err;
             
         })
