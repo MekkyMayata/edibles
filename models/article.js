@@ -3,7 +3,7 @@ let mongoose = require('mongoose')
 
 module.exports = function() {
 //create a connection 
-mongoose.connect('mongodb://localhost/articles', {
+mongoose.connect('mongodb+srv://MekkyMayata:42toO5JmJPgmq5cr@ediblescluster-g5ret.gcp.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log('db server connected'))
