@@ -15,7 +15,7 @@ module.exports = function(app) {
     app.get('/edibles/home', function(req, res) {
         //fetching data from the database
         article.Product.find({}, (err, data) => {
-            console.log(data);
+            //console.log(data);
             if(err) throw err;
             res.render('home', {products: data});
         })
@@ -27,7 +27,8 @@ module.exports = function(app) {
 
     //about page
     app.get('/edibles/about', function(req,res) {
-        res.render('about', {content: data});
+
+        res.render('about');
     })
 
     //contact page

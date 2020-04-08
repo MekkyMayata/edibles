@@ -32,36 +32,54 @@
         </header>
 
         <main>
+
+            <article id="article1">
             <div>
-            <h2>Freshly baked</h2>
-            <h3>Breads</h3>
-            <p  class="border">
-                <img class="pop-img" src="/assets/images/bread1.jpg" alt="bread">
-                "Our breads are made daily from highest-quality whole grain flour, water, salt, and yeast or sourdough starter.
-                Simply and naturally, and never any preservatives.
-                 Patience is key to achieving the proper level of fermentation and baking each loaf to perfection. 
-                 Available in whole grain, sourdough, olive loaf, classic rye, and potato-onion."
-            </p>
-            <p>
-                <a class="learn-links" href="">Learn more about our baking process...</a>
-            </p>
-    
+                <h2>Freshly baked</h2>
+                <header class="article-headers">
+                    <h3>Breads</h3>
+                    <p class="grey-time">Posted: <time datetime="2020-02-01" pubdate>January 4th 2020</time></p>
+                </header>
+
+                <p  class="border">
+                    <img class="article-img" src="/assets/images/bread1.jpg" alt="bread">
+                    "Our breads are made daily from highest-quality whole grain flour, water, salt, and yeast or sourdough starter.
+                    Simply and naturally, and never any preservatives.
+                    Patience is key to achieving the proper level of fermentation and baking each loaf to perfection. 
+                    Available in whole grain, sourdough, olive loaf, classic rye, and potato-onion."
+                </p>
+
+                <p><a class="learn-links" href="">Learn more about our baking process...</a></p>
+                <footer class="article-footers"></footer>
+
+            
+            <header class="article-headers">
             <h3>Cakes</h3>
+            <p class="grey-time">Posted: <time datetime="2020-02-01" pubdate>January 4th 2020</time></p>
+            </header>
+
             <p class="border">
-                <img class="pop-img" src="/assets/images/cake.jpg" alt="cake">
+                <img class="article-img" src="/assets/images/cake.jpg" alt="cake">
                 " Every day, we offer a large selection of cakes, including blueberry, multi-berry, bran, corn, lemon-poppyseed, and chocolate.
                  Our cakes are made from scratch each day. 
                  Stop by to see our seasonal muffin flavors!"
             </p>
             <p><a class="learn-links" href="">Learn more about our cake-making process...</a></p>
+            <footer class="article-footers"></footer>
             </div>
+        </article>
 
-            <div>
+            <div class="gfg">
             <article id="article-today">
                 <!--this image is not on the same line with the text, align them properly.-->
-                <h3><img src="/assets/images/idea1.jpg" alt=""><em><%= products[0].product %></em></h3>
+                <h3><img src="/assets/images/idea1.jpg" alt=""><em><%= products.product %></em></h3>
                 <p><%= products[0].description %></p><br>
                 <img  class="pop-img" src="/assets/images/muffins.jpg" alt="image">
+                <p id="article-writeup">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                   Excepteur sint occaecat cupidatat non proident, 
+                   sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <br>
                 <p><a class="learn-links" href="">Click here for details...</a></p>
             </article>
