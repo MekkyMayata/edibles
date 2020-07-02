@@ -1,4 +1,6 @@
 const express = require('express');
+const config = require('./config');
+
 const rootController = require('./controllers/rootController');
 const app = express();
 
@@ -12,6 +14,7 @@ app.use(express.static('./src/public'));
 //fire controllers
 rootController(app);
 
-app.listen(4000, () => {
-    console.log('app listening on port 4000');
+const port = process.env.PORT || 4000
+app.listen(port, () => {
+    console.log('app listening on port: ' + port);
 });
