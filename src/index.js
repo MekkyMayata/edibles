@@ -4,9 +4,10 @@ const app = express();
 
 //template engine
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 //static files
-app.use(express.static('./public'));
+app.use(express.static('./src/public'));
 
 //fire controllers
 rootController(app);

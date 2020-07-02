@@ -1,5 +1,7 @@
 FROM node:10-alpine
 
+#version the app
+ADD VERSION .
 
 #create app directory
 WORKDIR /usr/src/app
