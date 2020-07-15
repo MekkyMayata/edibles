@@ -1,5 +1,7 @@
 FROM node:10-alpine
 
+#version the app
+ADD VERSION .
 
 #create app directory
 WORKDIR /usr/src/app
@@ -13,7 +15,7 @@ RUN npm install
 COPY . .
 
 #Expose the port
-EXPOSE 4000
+EXPOSE 5000
 
 #Start the application
 CMD [ "npm", "start"]
