@@ -14,7 +14,7 @@ app.use(express.static('./src/public'));
 //fire controllers
 rootController(app);
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
     console.log('app listening on port: ' + port);
 });
