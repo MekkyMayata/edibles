@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: edibles-app
+  labels:
+    name: edibles-app
+    type: backend
+spec:
+  containers:
+  - name: edibles-app
+    image: okpallannaemeka/edibles
+    command: ["npm"]
+    args: ["start"]
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 5000
