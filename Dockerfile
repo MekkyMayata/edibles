@@ -4,7 +4,7 @@ FROM node:10-alpine
 ADD VERSION .
 
 #create app directory
-WORKDIR /usr/src/app
+WORKDIR /var/www/edibles
 
 #install app dependencies
 COPY package*.json ./
