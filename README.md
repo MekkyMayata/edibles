@@ -3,6 +3,14 @@ Build a website
 
 ### A basic website implemented with node.js, express.js and Mongodb
 
+#### Setup
+1. Have git, and node.js installed.
+2. clone the repo: *git clone "https://github.com/MekkyMayata/edibles.git"*
+3. cd into the project root
+4. edit and rename **.env.sample** to **.env**
+3. run *npm start*
+
+
 | Tools        | Description |
 | -----------  | ----------- |
 | Node.js      | an open-source, cross-platform, back end, JavaScript runtime environment |
